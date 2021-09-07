@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-sclae=1.0">
+	<meta charset="utf-8">
+	<title>gymsite</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="#"onclick="toggleMenu();">Home</a></li>
+			<li><a href="#"onclick="toggleMenu();">About</a></li>
+			<li><a href="#"onclick="toggleMenu();">Training</a></li>
+			<li><a href="#"onclick="toggleMenu();">Customer</a></li>
+			<li><a href="#"onclick="toggleMenu();">Contact</a></li>
+		</ul>
+	</div>
+	<section class="banner">
+		<header>
+			<h2 class="logo">YourLogo</h2>
+			<div class="toggle" onclick="toggleMenu();"></div>
+		</header>
+		<video src="bg.mp4" muted loop autoplay></video>
+		<div class="overlay"></div>
+		<div class="text">
+			<h2>Be Strong</h2>
+			<h3>Never give up</h3>
+			<p>gym phuc vụ cuộc sống <br>
+			khỏe đẹp thành công đẳng câp</p>
+			<a href="#">Join Us</a>
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="./img/facebook.png"></a></li>
+			<li><a href="#"><img src="./img/twitter.png"></a></li>
+			<li><a href="#"><img src="./img/instagram.png"></a></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function toggleMenu() {
+			var menuToggle = document.querySelector('.toggle');
+			var banner = document.querySelector('.banner');
+			menuToggle.classList.toggle('active');
+			banner.classList.toggle('active');
+
+
+			// body...
+		}
+	</script>
+
+</body>
+</html>
